@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page - HTML, CSS, Javascript (GSAP)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="styleK.css">
+
+    <link href="styleK.css" rel="stylesheet">
+    <style>
+         .chakra-petch-light {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.chakra-petch-regular {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.chakra-petch-medium {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.chakra-petch-semibold {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.chakra-petch-bold {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.chakra-petch-light-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.chakra-petch-regular-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+} 
+
+.chakra-petch-medium-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.chakra-petch-semibold-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.chakra-petch-bold-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+    </style>
+</head>
+<body>
+    
+<section class="wrapper">
+    <div class="left_container">
+        <nav>
+            <div class="logo_content">
+                <img src="adidas-logo-adidas-icon-free-free-vector-removebg-preview.png" alt="logo" class="nike_logo">
+            </div>
+            <ul class="nav_content">
+                <li><a class="nav_links active" href="men.html">men</a></li>
+                <li><a class="nav_links" href="women.html">women</a></li>
+                <li><a class="nav_links" href="kids.html">kids</a></li>
+                <li><a class="nav_links" href="javascript:void(0)">customize</a></li>
+            </ul>
+        </nav>
+        <br>
+        <main class="tools">
+            <div class="search">
+                <input type="text" class="search_input" placeholder="Search here....">
+                <button class="search_btn" class="btn btn-default btn-sm" type="button">
+                    <span class="glyphicon glyphicon-search" style="color:rgb(0, 0, 0);"></span>
+                </button>
+            </div>  
+            <div class="discount">
+                <span class="discount_percentage">55%</span>
+                <div class="seprator"></div>
+                <span class="save_up">save up to</span>
+            </div>
+        </main>
+        <section> 
+            <main class="brand_type1">
+                <div class="large_text">
+                    <h2 style="font-family: Chakra Petch;font-size: larger;">SNEAKERS<br></h2>
+                </div>
+                <div class="sliders">
+                    <button class="slider_btn" disabled>
+                        <i class="ri-arrow-left-s-line"></i>
+                    </button>
+                    <button class="slider_btn">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </button>
+                </div>
+            </main>
+        </section>
+        <br>
+        <section class="bottom_shoes_slider">
+            <ul class="bottom_shoes_card">
+                <li class="card_shoe">
+                    <div class="shoe_content" style="background-color: #000000;">
+                        <img src="552734_001_ss_02-removebg-preview.png" alt="adidas_forum_low" class="shoe">
+                    </div>
+                    <div class="desc_product">
+                        <div class="transparent_bg">
+                            <div class="add_to_cart" style="background-color: #ffffff;">
+                                <i class="ri-add-line"></i>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span class="card_product_name">RACER TR23</span>
+                            <span>3 colors</span>
+                            <span class="price"><i class="ri-money-euro-circle-line"></i> $45.00</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="card_shoe">
+                    <div class="shoe_content" style="background-color: #ffffff;">
+                        <img src="adidas-disney-breaknet-20-shoes-kids-cloud-white-core-black-scarlet-id8026-2b222461-599c-47d3-b922-9b241f7dbc73_large_2x_jpeg-removebg-preview.png" alt="aplhaboost_v1" class="shoe">
+                    </div>
+                    <div class="desc_product">
+                        <div class="transparent_bg">
+                            <div class="add_to_cart" style="background-color: #cb0202;">
+                                <i class="ri-add-line"></i>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span class="card_product_name">BREAKNET 2.0</span>
+                            <span>3 colors</span>
+                            <span class="price"><i class="ri-money-euro-circle-line"></i> $45.00</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="card_shoe">
+                    <div class="shoe_content" style="background-color: #e7afaf;">
+                        <img src="4096478-removebg-preview.png" alt="bad bunny" class="shoe">
+                    </div>
+                    <div class="desc_product">
+                        <div class="transparent_bg">
+                            <div class="add_to_cart" style="background-color: #f79e7b;">
+                                <i class="ri-add-line"></i>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span class="card_product_name">CAMPUS 00S</span>
+                            <span>3 colors</span>
+                            <span class="price"><i class="ri-money-euro-circle-line"></i> $90.00</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="card_shoe">
+                    <div class="shoe_content" style="background-color: rgb(173, 207, 255);">
+                        <img src="adidas_ie6161_12_footwear_photography_left_side_center_lateral_view_white-removebg-preview.png" alt="air-max-excee-" class="shoe" class="product_image">
+                    </div>
+                    <div class="desc_product">
+                        <div class="transparent_bg">
+                            <div class="add_to_cart" style="background-color: rgba(177, 133, 70, 0.922);">
+                                <i class="ri-add-line"></i>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span class="card_product_name">UB GORE-TEX</span>
+                            <span>3 colors</span>
+                            <span class="price"><i class="ri-money-euro-circle-line"></i> $49.00</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="card_shoe">
+                    <div class="shoe_content" style="background-color: #dfe4f9;">
+                        <img src="ef13269351687f6f1054651fbdb94d4127396404_IE1678_0-removebg-preview.png" alt="nike-span-2" class="shoe">
+                    </div>
+                    <div class="desc_product">
+                        <div class="transparent_bg">
+                            <div class="add_to_cart" style="background-color: #ff7494;">
+                                <i class="ri-add-line"></i>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <span class="card_product_name">UB C.RDY W</span>
+                            <span>3 colors</span>
+                            <span class="price"><i class="ri-money-euro-circle-line"></i> $154.00</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <main class="right_container">
+        <nav class="right_nav">
+            <ul class="right_nav_content">
+                <li class="r_nav_links">
+                    Product code:  IG7418
+                </li>
+                <button class="cart_btn"> <span class="glyphicon glyphicon-shopping-cart"></span><i class="ri-shopping-bag-fill"></i></button>
+            </ul>
+        </nav>
+        <section class="selected_product">
+            <div class="circle1">
+                <div class="icon_">
+                    <i class="ri-add-line"></i>
+                    <div class="product_tag">
+                        <p class="offer1">99%</p>
+                        <p>comfortable</p>
+                    </div>
+                </div>
+            </div>
+            <div class="circle2">
+                <div class="icon_">
+                    <i class="ri-add-line"></i>
+                    <div class="product_tag">
+                        <p class="offer2">rare high percentage</p>
+                    </div>
+                </div>
+            </div>
+            <div class="selected_product_content">
+                <img src="995026-full_product-removebg-preview.png" alt="nike-air-max-90" class="selected_product_img">
+            </div>
+            <div class="size_product">
+                <main class="content">
+                    <ul class="size_list">
+                        <li class="size_item">
+                            <span>39</span>
+                        </li>
+                        <li class="size_item">
+                            <span>40</span>
+                        </li>
+                        <li class="size_item">
+                            <span>41</span>
+                        </li>
+                        <li class="size_item">
+                            <span>42</span>
+                        </li>
+                        <li class="size_item">
+                            <span>43</span>
+                        </li>
+                    </ul> <br><br>
+                    <div class="text">
+                        <h3 class="selected_product_text">ADIDAS CAMPUS</h3>
+                    </div>
+                    <div class="reviews">
+                        <span>reviews 4k+</span>
+                        <ul class="stars_list">
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                        </ul>
+                    </div>
+                </main>
+            </div>
+        </section>
+    </main>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+
+<script>
+    gsap.from(".nike_logo", { duration: 1, x: -100, opacity: 0, ease: "bounce" });
+    gsap.from(".nav_links", { duration: 1, y: -100, opacity: 0, stagger: 0.2 });
+    gsap.from(".search_input", { duration: 1, x: -200, opacity: 0, delay: 0.5 });
+    gsap.from(".search_btn", { duration: 1, x: 200, opacity: 0, delay: 0.5 });
+    gsap.from(".discount_percentage", { duration: 1, y: 200, opacity: 0, delay: 1 });
+    gsap.from(".brand_type1 h2", { duration: 1, x: -100, opacity: 0, delay: 1.5 });
+    gsap.from(".right_container", { duration: 1, x: -200, opacity: 0, delay: 0.5 });
+    gsap.from(".sliders",{duration: 1, y: -100, opacity: 0, stagger: 0.2})
+    gsap.from(".card_shoe", { duration: 1.8, x: -3000, opacity: 3, stagger: 0.2, delay: 2 });
+    gsap.from(".selected_product_content", { duration: 1.2, y: -3000, opacity: 0, stagger: 0.2, delay: 2 });
+    gsap.from(".circle1", { duration: 1.5, x: -100, opacity: 0, delay: 3 });
+    gsap.from(".circle2", { duration: 1.5, x: -100, opacity: 0, delay: 3 });
+    
+    const productImages = document.querySelectorAll('.shoe');
+    productImages.forEach(image => {
+        image.addEventListener('mouseenter', () => {
+            gsap.to(image, { scale: 1.2, duration: 0.5 });
+        });
+        image.addEventListener('mouseleave', () => {
+            gsap.to(image, { scale: 1, duration: 0.5 });
+        });
+    });
+</script>
+</body>
+</html>
